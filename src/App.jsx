@@ -1,27 +1,23 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Outlet} from 'react-router-dom'
-import Navbar from '../components/navbar.jsx'
-import Home from "../components/home.jsx"
-import Contact from "../components/contact.jsx"
-import Projects from "../components/projects.jsx"
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import Contact from "../components/contact.jsx";
+import Home from "../components/home.jsx";
+import Navbar from "../components/navbar.jsx";
+import Projects from "../components/projects.jsx";
 
 function App() {
-
   return (
-      <main>
-        <BrowserRouter>
+    <main>
+      <BrowserRouter>
         <Navbar />
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='project' element={<Projects />} />
-            <Route path='contact' element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="project" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
       <Outlet />
-      </main>
-      
-
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
