@@ -1,7 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Link, NavLink } from "react-router-dom";
-import instaImg from "../src/assets/pngwing1.png"
+import { NavLink } from "react-router-dom";
+import instaImg from "../src/assets/pngwing1.png";
 
 export default function Navbar() {
     
