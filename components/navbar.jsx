@@ -12,10 +12,10 @@ export default function Navbar() {
             
             <span className="nav-tabs">
                 <NavLink to="/">home</NavLink>
-                <NavLink to="/project">projects</NavLink>
+                <a href="/#projects_section">projects</a>
                 <NavLink to="/contact">say hi</NavLink>
             </span>
-            <a href="#"><img src={instaImg} alt="" width="30px"/></a>
+            <a href="https://www.instagram.com/aexit.zip/"><img src={instaImg} alt="" width="30px"/></a>
             
         </nav>
         
